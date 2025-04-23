@@ -1,0 +1,224 @@
+:root {
+	--primary-color: #0c99d1; /* Cor principal */
+	--secundary-color: black; /* Cor secundária */
+}
+
+/* Importa fonte Lato */
+@import url("https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800|Playfair+Display:ital,wght@0,400..900;1,400..900");
+
+/* Config da fonte Lato */
+.lato-thin {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lato-light {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lato-regular {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lato-bold {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lato-black {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lato-thin-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lato-light-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lato-regular-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lato-bold-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lato-black-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Aplica fonte, cor do texto e cursor */
+* {
+	box-sizing: border-box;
+	font-family: "Playfair Display", sans-serif;
+	color: black;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107298), auto;
+	text-rendering: auto;
+	image-rendering: auto;
+	shape-rendering: auto;
+}
+/* Reseta margens do body */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Caso tenha botão, yuri fica com vergonha */
+#icon-logo,
+button {
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107296), auto;
+}
+
+/* Body com tamanho dependendo do navegador e background */
+body {
+	background-image: url("../img/index/warning2.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#top-banner,
+#top-banner span {
+	background-color: var(--primary-color);
+	color: var(--secundary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+#icon-logo {
+	width: 48px;
+	height: 48px;
+}
+#title {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 3em;
+	-webkit-text-fill-color: blue;
+}
+.subtitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#description {
+	max-width: 25vw;
+	margin: 5vh auto;
+	padding: 20px;
+	border: 1px solid var(--secundary-color);
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
+	border: 4px solid var(--primary-color);
+}
+
+/*backdrop-filter: blur(8px) saturate(200%);*/
+
+#description2 {
+	max-width: 25vw;
+	margin: 5vh auto;
+	padding: 20px;
+	border: 1px solid var(--secundary-color);
+	border-color: white;
+	border: 4px solid var(--primary-color) ;
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
+}
+
+#botao-tradução {
+	width: 200px;
+	height: 55px;
+	-webkit-text-fill-color: var(--secundary-color);
+	background-position: center;
+	border-radius: 20px;
+	background-color: blue;
+	font-style: oblique;
+	font-size: 24px;
+	display: inline-block;
+	text-decoration: none;
+	border: 2px white solid;
+	font-family: Playfair Display;
+	font-style: normal;
+	text-align: center;
+}
+
+.botao:hover {
+    background-color: darkred;
+	border-color: silver;
+}
+
+#botao-tradução {
+    display: block;
+    margin: 20px auto;
+}
+
+#botao-mobile {
+	width: 200px;
+	height: 55px;
+	-webkit-text-fill-color: var(--secundary-color);
+	border-radius: 20px;
+	background-color: blue;
+	font-size: 30px;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#botao-mobile {
+    display: block;
+    margin: 20px auto;
+}
+
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s transform 0.2s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-right-button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+.top-right-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}

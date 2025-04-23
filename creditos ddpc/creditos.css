@@ -1,0 +1,254 @@
+:root {
+	--primary-color: black; /* Cor principal */
+	--secundary-color: white; /* Cor secundária */
+}
+
+/* Importa fonte Lato */
+@import url("https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800|Playfair+Display:ital,wght@0,400..900;1,400..900");
+
+/* Config da fonte Lato */
+.lato-thin {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lato-light {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lato-regular {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lato-bold {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lato-black {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lato-thin-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lato-light-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lato-regular-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lato-bold-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lato-black-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Aplica fonte, cor do texto e cursor */
+* {
+	box-sizing: border-box;
+	font-family: "Playfair Display", sans-serif;
+	color: var(--primary-color);
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107298), auto;
+	text-rendering: auto;
+	image-rendering: auto;
+	shape-rendering: auto;
+}
+/* Reseta margens do body */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Caso tenha botão, yuri fica com vergonha */
+#icon-logo,
+button {
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107296), auto;
+}
+
+/* Body com tamanho dependendo do navegador e background */
+body {
+	background-image: url("city-night-pictures-7fugoaeq1bmpu06r.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#top-banner,
+#top-banner span {
+	background-color: var(--primary-color);
+	color: var(--secundary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	width: 100vw;
+	box-sizing: border-box;
+    font-size: medium;
+}
+
+#icon-logo {
+	width: 48px;
+	height: 48px;
+}
+#title {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 3em;
+}
+.subtitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#description {
+	max-width: 70vw;
+	margin: 5vh auto;
+	padding: 25px;
+	border: 1px solid var(--secundary-color);
+	border-radius: 20px;
+	backdrop-filter: blur(12px) saturate(150%);
+	border: 4px solid black;
+}
+
+#ready {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+	font-style: italic;
+  transform: skewX(-5deg);
+  background-color: #450a89;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+#pfp-container {
+    backdrop-filter: blur(12px) saturate(150%);
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    max-width: 65vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.small-text {
+	font-size: 14;
+}
+
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: lawngreen;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s transform 0.2s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-right-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.top-right-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.container {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.sakura {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image: url('cG5n.png');
+	background-size: cover;
+	pointer-events: none;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-pfp {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Doki Doki Polyglots Club</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav id="top-banner">
+			<img id="icon-logo" src="img/logo.png" alt="ícone da logo" />
+			<span>Doki Doki Polyglots Club</span>
+			<button onclick="document.getElementById('musica').play()">▶️ Tocar música</button>
+			<audio id="musica">
+			<source src="Yiruma.mp3" type="audio/mpeg">
+			Seu navegador não suporta áudio HTML5.
+			</audio>
+		</nav>
+		<h1 id="title">Doki Doki Polyglots Club</h1>
+		<p class="subtitle"><b>
+			Olá, Aqui quem fala é o Marcos, fundador da
+			<abbr title="Doki Doki Polyglots Club">DDPC</abbr></b>
+		</p>
+		<p class="subtitle" id="description" id="P" ><b> 
+			Aqui você conseguirá baixar todas as traduções e ports que o <b>DDPC</b> já fez, espero que goste e que se divirta.
+			Somos uma comunidade que nasceu no final do ano passado em dezembro, a história é interessante até, Marcos e Demiurgo
+			estavam convesando no pv quando o assunto foi mudando pra para a tradução de mods de ddlc, e como ter uma comunidade 
+			de traduções poderia ser interessante, Berserk se juntou logo depois quando eu convidei ele pra participar do projeto 
+			somos os 3 fundadores do DDPC, e essa é a nossa historia. (clique no botão abaixo para saber dela por completo)...
+		</b>
+		</p>
+		<h2 id="ready">Tem previsão de quando o site ficará pronto?</h2>
+		<p class="subtitle"><b>Por enquanto ainda não temos previsão, mas faremos o possivel pro lançamento ser rapido.</b></p>
+
+		<button id="botao-tradução" >Traduções.</button>
+		<button id="botao-historia">História.</button>
+
+		<div id="container"></div>
+		<script src="js/ddpc.js"></script>
+	</body>
+</html>
